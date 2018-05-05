@@ -1,18 +1,20 @@
-Numbers = [54, 26, 93, 17, 77, 31, 44, 55, 20] 
+Numbers = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 
-#def selection_sort(list):
-#    lenth = len(list)
-#    max_num = max(list)
-#	max_num_dict = list.find(max_num)
-#	tem = list[length - 1]
-#	list[length - 1] = max_num
-#	list[max_num_dict] = tem
-#	return 
 
-i = len(Numbers)	
-while i > 0:
-    max = 0
-    for x in range(0 , i):
-	    if x > max:
-		    max = x
-	
+def selection_sort(list):
+    for i in range(len(list)):
+        mini = min(list[i:]) #find minimum element
+        min_index = list[i:].index(mini) #find index of minimum element
+        list[i + min_index] = list[i] #replace element at min_index with first element
+        list[i] = mini                  #replace first element with min element
+        print(list)
+
+
+#print (source)
+print("Number : ", Numbers)
+print()
+print("Selection sorting : ")
+selection_sort(Numbers)
+print()
+print("Final result : ")
+print(Numbers)
