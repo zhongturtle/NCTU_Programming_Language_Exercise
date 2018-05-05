@@ -17,8 +17,10 @@ while i <= num :
     i = i + 1	
 print("Prime number <= ",num," are listed here: ")
 count = 0
-#for i in list:
-    #print(i , endswith(""))
-print(list)
+for i in list:
+    print(i , end = " ")
+#print(list)
     #count = count + 1
+print()
+print()
 print("Number of primes: " , len(list))
