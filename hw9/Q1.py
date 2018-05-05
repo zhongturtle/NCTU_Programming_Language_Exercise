@@ -19,7 +19,7 @@ print("Word", "\t" , "Occurrence")
 word_classes.sort()
 num = 0
 for i in word_classes:
-    print(i,"\t",words.count(i))
+    print(i , "\t", words.count(i))
     #if(i == type[num - 1]):
 	#    num = num + 1 
 	#else:
