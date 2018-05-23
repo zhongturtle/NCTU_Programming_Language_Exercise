@@ -1,0 +1,27 @@
+# Format description
+# Field 1: amino acid three letter code
+# Field 2: amino acid one letter code
+ALA	A
+ARG	R
+ASN	N
+ASP	D
+ASX	B
+CYS	C
+GLN	Q
+GLU	E
+GLX	Z
+GLY	G
+HIS	H
+ILE	I
+LEU	L
+LYS	K
+MET	M
+PHE	F
+PRO	P
+SER	S
+THR	T
+TRP	W
+TYR	Y
+UNK	U
+VAL	V
+???	?
