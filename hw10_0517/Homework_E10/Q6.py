@@ -1,11 +1,11 @@
-distance_total = 0
-height = 100
+def strLen(str):
+    len = 0
+    for ch in str: len += 1
+    return len
 
-distance_total += height
-t = 0
-while t<11:
-  t += 1
-  print("Before bounce", t, "=>", distance_total)
 
-  height *= 0.5
-  distance_total += height * 2
+
+##### Main Program
+assert strLen("ABCDE") == 5
+assert strLen("13579246810") == 11
+assert strLen("") == 0

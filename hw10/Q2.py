@@ -1,5 +1,5 @@
 import os
-pdb_dict = "PDB/"
+pdb_dict = "Homework_E10/PDB/"
 
 for i in os.listdir(pdb_dict):
     file = open(pdb_dict + i)

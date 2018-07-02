@@ -1,7 +1,11 @@
-matrix = ""
-for x in range(1, 9+1):
-    for y in range(1, x+1):
-        matrix += str(x) + "x" + str(y) + "=" + str(x*y) + "\t"
-    matrix += "\n"
+distance_total = 0
+height = 100
 
-print(matrix)
+distance_total += height
+t = 0
+while t<11:
+  t += 1
+  print("Before bounce", t, "=>", distance_total)
+
+  height *= 0.5
+  distance_total += height * 2

@@ -1,37 +1,20 @@
 import sys
 
-
-
-##### Functions
 def is_prime(n):
-    if n == 2: return True
+    if n == 2: 
+        return 1
+    for i in range(2 , pow(n, 0.5)):
+        if n % i == 0 :
+            return 0
+    return 1
 
-    x = 2
-    end = pow(n, 0.5)
-
-    while x <= end:
-        if n%x == 0: return False
-
-        x += 1
-
-    return True
-
-
-
-
-##### Main Program
-num = int(sys.argv[1])
-
-print("Primes smaller than " + str(num))
+number = int(sys.argv[1])
 
 num_primes = 0
-output = ""
-for n in range(2, num+1):
-    if not is_prime(n): continue
+for n in range(2, number+1):
+    if is_prime(n) == 0: 
+        continue
 
-    output += str(n) + "\t"
     num_primes += 1
 
-print(output)
-
-print("\nTotal number of primes = " + str(num_primes))
+print(str(num_primes))
